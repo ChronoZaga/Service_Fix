@@ -49,11 +49,6 @@ You can easily **add or remove** services from either group by editing the scrip
    - Use exact names for precision (e.g. `SamsungMagicianSVC`)
 4. Save the file and run it again.
 
-Example:
-```powershell
-# To add a new service to Manual group:
-$SM1 = get-service -displayname *vmware*,*gigabyte*,*YOURNEW SERVICE*
-
 ## Important Warning
 This script disables several core Windows services including **WinRM**, **SysMain** (Superfetch), **LanmanServer** (Server service), **DiagTrack**, and others. 
 
