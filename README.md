@@ -53,3 +53,13 @@ Example:
 ```powershell
 # To add a new service to Manual group:
 $SM1 = get-service -displayname *vmware*,*gigabyte*,*YOURNEW SERVICE*
+
+## Important Warning
+This script disables several core Windows services including **WinRM**, **SysMain** (Superfetch), **LanmanServer** (Server service), **DiagTrack**, and others. 
+
+These services are turned off to improve scurity, limit telemetry, and tune Windows more to be a single user gaming machine. However:
+- **WinRM** is used for remote PowerShell management — disabling it means you won't be able to manage this PC remotely.
+- **SysMain** helps with application loading speed — however with modern SSD speeds it only serves to fill up your RAM with apps you may not use, and can be loaded in no time when needed.
+- **LanmanServer** is required for file/printer sharing — disabling it will prevent this PC from acting as a file server.
+
+Most home gaming users won't notice any issues, but re-enable any service via `services.msc` if you experience problems.
