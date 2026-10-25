@@ -109,7 +109,7 @@ Several services in the Disabled group accept connections from other machines, o
 ## App Security
 - **Offline:** the app makes no network connections and collects no data. The only exception is **Web Search**, which opens a Google search in your default browser.
 - **The browser doesn't inherit admin rights:** Web Search launches the browser through Explorer, so the browser runs as a normal user even though Service Fix runs as administrator.
-- **Open source:** all logic is in `Service Fix.cs`. Read it, then build it yourself with the command above.
+- **Open source:** all logic is in `Service Fix.cs`. Read it, run an AI security scan on it, then build it yourself if you like.
 - **No hidden changes:** the app only stops services and changes their startup type. It doesn't delete services, edit other registry settings or install anything.
 
 ## Important Warning
