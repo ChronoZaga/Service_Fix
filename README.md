@@ -116,7 +116,7 @@ Several services in the Disabled group accept connections from other machines, o
 The default lists disable several core Windows services, including **WinRM**, **SysMain** (Superfetch), **LanmanServer** (Server), **WSearch** (Windows Search), **DiagTrack** and others. They're turned off to shrink the PC's network attack surface, limit telemetry and tune Windows as a single-user gaming machine (see **Security Benefits**). However:
 - **WinRM** is used for remote PowerShell management. Disabling it means you can't manage this PC remotely.
 - **SysMain** preloads apps to speed up loading. With modern SSDs it mostly fills RAM with apps you may not use, and they load quickly anyway.
-- **LanmanServer** is required for file and printer sharing. Disabling it stops this PC from sharing files or printers with other PCs.
+- **LanmanServer** is required for file and printer sharing. Disabling it stops this PC from sharing files or printers with other PCs. You can still get shared files from other locations.
 - **WSearch** powers indexed search. Start menu and File Explorer searches will be slower.
 - **Remote Desktop\*** disables Remote Desktop connections to this PC.
 - **WSLService** is required for Windows Subsystem for Linux. Remove it from the list if you use WSL.
